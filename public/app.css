@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "ProximaNova";
+    src: url("fonts/ProximaNova-Alt-Black.otf") format("otf");
+    src: url("fonts/ProximaNova-Alt-Bold.otf") format("woff");
+    src: url("fonts/ProximaNova-Alt-Light.otf") format("woff");
+    src: url("fonts/ProximaNova-Alt-Regular.otf") format("woff");
+}
+
+body{
+    font-size: 12px;
+    color: #2e3337;
+    font-family: 'ProximaNova', Arial, sans-serif;
+    background: black;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+#main-section{
+    background: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+ /*Menu Items*/
+#center-menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a.main-menu {
+    text-decoration: none;
+    color: black;
+    font-family: 'ProximaNova', Arial, sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+a.main-menu:hover {
+    text-decoration: none;
+    color: black;
+    font-family: 'ProximaNova', Arial, sans-serif;
+    font-size: 14px;
+    list-style: none;
+    font-weight: 600;
+}
+
+/*Sidebar dos Categorias dos livros*/
+aside{
+    min-width: 170px;
+    max-width: 280px;
+    background: #fbfbfb;
+    margin: 0;
+    margin-right: 0px;
+    padding-top: 125px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+h4.sidebar-title{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'ProximaNova', Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+ul.category-list{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+li.category-item{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a.category-link{
+    color: #adadad;
+    font-size: 14px;
+    font-family: 'ProximaNova', Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header#main-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #main-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    aside{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    header#main-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #main-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    header#main-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #main-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header#main-header {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #main-section{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #center-menu{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 120px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    header#main-header {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #main-section{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #center-menu{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 120px;
+    }
+}
