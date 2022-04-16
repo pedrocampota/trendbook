@@ -19,10 +19,10 @@ body{
 
 #main-section{
     background: white;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 25px;
-    border-radius: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    border-radius: 50px;
     min-height: 100vh;
 }
 
@@ -149,8 +149,8 @@ a.category-link{
     }
 
     #main-section{
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     #center-menu{
@@ -168,8 +168,8 @@ a.category-link{
     }
 
     #main-section{
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     #center-menu{

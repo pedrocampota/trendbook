@@ -14,7 +14,7 @@
 <link href="app.css" rel="stylesheet">
 
 <body>
-<section id="main-section">
+<section id="main-section" class="container">
     <x-header></x-header>
     {{ $slot }}
 </section>

@@ -1,6 +1,6 @@
 <header id="main-header">
     <!--flex items-center-->
-    <div class="container-fluid px-0">
+    <div class="container px-0">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none" style="min-width: 150px;max-width: 170px;">
                 <img src="/images/trendesignbook-logo.png" alt="trendbook_logo" width="100%" height="16">
@@ -8,7 +8,7 @@
 
             <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="main-menu mr-6 font-semibold">Book Store</a></li>
-                <li><a href="#" class="main-menu ml-6" style="color: #adadad;">Wishlist</a></li>
+                <li><a href="/wishlist" class="main-menu ml-6" style="color: #adadad;">Wishlist</a></li>
             </ul>
 
             <div class="text-end mr-14 items-center flex">
@@ -30,7 +30,7 @@
                 </button>
                 <ul class="dropdown-menu text-small mt-2" aria-labelledby="dropdownUser1" style="position: absolute; inset: 0px auto auto 0px;  transform: translate(0px, 47px); width: 100%; border-radius: 12px;margin: 0px;">
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house-user pr-3"></i> Profile</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-heart pr-3"></i> My Wishlist</a></li>
+                    <li><a class="dropdown-item" href="/wishlist"><i class="fa-solid fa-heart pr-3"></i> My Wishlist</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear pr-3"></i> Settings</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#"
@@ -59,30 +59,4 @@
 
         </div>
     </div>
-
-
-
-<!--
-    <div class="col-md-2">
-        <a href="/">
-            <img src="/images/trendesignbook-logo.png" alt="trendbook_logo" width="165" height="16">
-        </a>
-    </div>
-    <div class="col-md-6">
-        <nav class="list-none text-white ">
-            <div class="text-left ml-5">
-                    <a href="#" class="main-menu mr-6 font-semibold">Book Store</a>
-                    <a href="#" class="main-menu ml-6">Wishlist</a>
-            </div>
-        </nav>
-    </div>
-    <div class="col-md-4">
-        <nav>
-            <div class="flex float-right" >
-                <button class="flex items-center">
-                    <img src="https://i.pravatar.cc/60" alt="" width="45" height="45" class="rounded-full mr-4">
-                    <a href="#" class="main-menu"><span class="text-gray-500">Hi,</span> Pedro Campota</a>
-                </button>
-        </nav>
-    </div>-->
 </header>
