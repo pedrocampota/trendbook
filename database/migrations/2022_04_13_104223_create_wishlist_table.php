@@ -13,11 +13,21 @@ return new class extends Migration
      */
     public function up()
     {
+        //this is a backup of create table settings
+        //$table->increments('id');
+        //$table->integer('user_id')->unsigned();
+        //$table->integer('book_id')->unsigned();
+
         Schema::create('wishlist', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('book_id');
             $table->foreignId('user_id');
+            $table->foreignId('book_id');
             $table->timestamps();
+        });
+
+        Schema::table('wishlist', function($table) {
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('book_id')->references('id')->on('books');
         });
     }
 

@@ -1,34 +1,35 @@
-@props(['book'])
+@props(['wishlist'])
 
-<div class="col-md-6 col-book">
+<div class="col-sm col-book">
     <article
         class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-        <div class="wrapper" style="display: flex;">
-            <div class="col" style="min-width:40%">
+        <div class="wrapper" style="min-width: 50vh;display: flex;margin: 0px;">
+            <div class="col-4">
                 <div
                     style="border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; border-top-left-radius: 12px; border-top-right-radius: 0px;background: #fb9f20;padding-top: 8px;padding-bottom: 8px;max-width: 100px;position: absolute;z-index: 10;">
                     <a href="#"
                        style="color: #ffff;font-weight: 400;font-size: 12px;padding-top: 8px;padding-bottom: 8px;padding-left: 20px;padding-right: 20px;">Best
                         Seller</a>
                 </div>
-                <img src="{{ $book->thumbnail }}" alt="Book Cover"
-                     class="rounded-xl" style="object-fit: cover;object-position:center; height: 100%;">
+                <img src="{{ $wishlist->book->thumbnail }}" alt="Book Cover"
+                     class="rounded-xl img-fluid" style="height: 100%;object-fit: cover;object-position: center;">
             </div>
 
-            <div class="col flex items-center">
+            <div class="col-8 flex items-center">
                 <div class="book-info-panel">
                     <div style="margin-bottom: 18px;">
                         <h1 style="font-weight: 400;font-size: 20px;margin-bottom: 10px;">
-                            <a href="#">{{ $book->title }}</a>
+                            <a href="#">{{$wishlist->book->title}}</a>
                         </h1>
 
                         <p style="font-family: 'ProximaNova', Arial, sans-serif;font-size: 12px;padding-bottom: 5px;padding-top: 5px;">
-                            <a href="#" style="color:#adadad;">{{ $book->slug }}</a>
+                            <a href="#" style="color:#adadad;">Business &amp; Money</a>
                         </p>
                     </div>
 
                     <div style="font-size:14px;margin-bottom: 25px;">
-                        <div class="star-rating flex space-x-2" style="margin-top: 0px; margin-bottom: 25px;">
+                        <div class="star-rating flex space-x-2"
+                             style="margin-top: 0px; margin-bottom: 25px;">
                             <i class="fa-solid fa-star" style="color: #FE9F1F"></i>
                             <i class="fa-solid fa-star" style="color: #FE9F1F"></i>
                             <i class="fa-solid fa-star" style="color: #FE9F1F"></i>
@@ -47,15 +48,7 @@
                                 Add to cart
                             </button>
 
-                            <a href="#"
-                               x-data="{}"
-                               @click.prevent="document.querySelector('#wishlist-form').submit()"><i class="fa-solid fa-heart" style="font-size: 18px; color: #ff5053"></i></a>
-                            <!--<a href="#"><i class="fa-solid fa-heart" style="font-size: 18px; color: #ff5053"></i></a>-->
-                            <form id="wishlist-form" method="POST" action="/wishlist" class="hidden">
-                                @csrf
-                                <input name="user_id" type="text" value="{{Auth::user()->id}}" />
-                                <input name="book_id" type="text" value="{{$book->id}}" />
-                            </form>
+                            <a href="#" style="font-size: 14px;">Remove</a>
                         </div>
                     </footer>
                 </div>

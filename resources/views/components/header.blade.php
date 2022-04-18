@@ -6,10 +6,16 @@
                 <img src="/images/trendesignbook-logo.png" alt="trendbook_logo" width="100%" height="16">
             </a>
 
-            <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="main-menu mr-6 font-semibold">Book Store</a></li>
-                <li><a href="/wishlist" class="main-menu ml-6" style="color: #adadad;">Wishlist</a></li>
-            </ul>
+            @auth
+                <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="main-menu mr-6 font-semibold">Book Store</a></li>
+                    <li><a href="/wishlist" class="main-menu ml-6" style="color: #adadad;">Wishlist</a></li>
+                </ul>
+            @else
+                <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="main-menu mr-6 font-semibold">Book Store</a></li>
+                </ul>
+            @endauth
 
             <div class="text-end mr-14 items-center flex">
                 <a href="/cart" class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
