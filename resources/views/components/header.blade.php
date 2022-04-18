@@ -8,8 +8,8 @@
 
             @auth
                 <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="main-menu mr-6 font-semibold">Book Store</a></li>
-                    <li><a href="/wishlist" class="main-menu ml-6" style="color: #adadad;">Wishlist</a></li>
+                    <li><a href="/" class="main-menu mr-6 font-semibold">Book Store</a></li>
+                    <li><a href="/wishlist" class="main-menu ml-6">Wishlist</a></li>
                 </ul>
             @else
                 <ul id="center-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">

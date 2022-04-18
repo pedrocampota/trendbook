@@ -9,11 +9,14 @@ class BookController extends Controller
 {
     public function index()
     {
-        return view('books.index', [
+        $books = Book::orderby('id', 'desc')->paginate(8);
+        return view('books.index', compact('books'));
+
+        /*return view('books.index', [
             'books' => Book::latest()->filter(
                 request(['category'])
             )->paginate(18)->withQueryString()
-        ]);
+        ]);*/
     }
 
     public function show(Book $book)

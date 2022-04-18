@@ -47,6 +47,8 @@
                                 Add to cart
                             </button>
 
+
+                            @auth
                             <a href="#"
                                x-data="{}"
                                @click.prevent="document.querySelector('#wishlist-form').submit()"><i class="fa-solid fa-heart" style="font-size: 18px; color: #ff5053"></i></a>
@@ -56,6 +58,9 @@
                                 <input name="user_id" type="text" value="{{Auth::user()->id}}" />
                                 <input name="book_id" type="text" value="{{$book->id}}" />
                             </form>
+                            @else
+                                <a href="/login"><i class="fa-solid fa-heart" style="font-size: 18px; color: #ff5053"></i></a>
+                            @endauth
                         </div>
                     </footer>
                 </div>

@@ -33,6 +33,7 @@ section#wishlist-section{
     .col-book{
         padding-left: 10px;
         padding-right: 10px;
+        max-width: 50%;
     }
 
     .book-info-panel{

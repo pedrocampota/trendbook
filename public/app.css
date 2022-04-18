@@ -54,7 +54,7 @@ a.main-menu:hover {
 
 /*Sidebar dos Categorias dos livros*/
 aside{
-    min-width: 170px;
+    min-width: 240px;
     max-width: 280px;
     background: #fbfbfb;
     margin: 0;
@@ -177,4 +177,15 @@ a.category-link{
         padding-bottom: 0px;
         margin-left: 120px;
     }
+}
+
+
+/*Pagination Styling*/
+
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    float: right;
 }
