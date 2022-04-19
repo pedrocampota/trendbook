@@ -1,21 +1,20 @@
 @props(['wishlist'])
 
-<div class="col-sm col-book">
+<div class="col-md-6 col-book">
     <article
         class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-        <div class="wrapper" style="min-width: 50vh;display: flex;margin: 0px;">
-            <div class="col-4">
-                <div
-                    style="border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; border-top-left-radius: 12px; border-top-right-radius: 0px;background: #fb9f20;padding-top: 8px;padding-bottom: 8px;max-width: 100px;position: absolute;z-index: 10;">
+        <div class="row">
+            <div class="col">
+                <div style="border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; border-top-left-radius: 12px; border-top-right-radius: 0px;background: #fb9f20;padding-top: 8px;padding-bottom: 8px;max-width: 100px;position: absolute;z-index: 10;">
                     <a href="#"
                        style="color: #ffff;font-weight: 400;font-size: 12px;padding-top: 8px;padding-bottom: 8px;padding-left: 20px;padding-right: 20px;">Best
                         Seller</a>
                 </div>
                 <img src="{{ $wishlist->book->thumbnail }}" alt="Book Cover"
-                     class="rounded-xl img-fluid" style="height: 100%;object-fit: cover;object-position: center;">
+                     class="rounded-xl img-fluid" style="height: 100%;object-fit: cover;object-position: center; width: 100%; max-width: 210px;display: block;">
             </div>
 
-            <div class="col-8 flex items-center">
+            <div class="col flex items-center">
                 <div class="book-info-panel">
                     <div style="margin-bottom: 18px;">
                         <h1 style="font-weight: 400;font-size: 20px;margin-bottom: 10px;">
@@ -52,7 +51,6 @@
                         </div>
                     </footer>
                 </div>
-
             </div>
         </div>
     </article>

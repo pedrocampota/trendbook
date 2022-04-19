@@ -1,10 +1,10 @@
 @props(['book'])
 
-<div class="col-md-6 col-book">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
     <article
         class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-        <div class="wrapper" style="display: flex;">
-            <div class="col" style="min-width:40%">
+        <div class="wrapper flex">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div
                     style="border-bottom-left-radius: 0px; border-bottom-right-radius: 20px; border-top-left-radius: 12px; border-top-right-radius: 0px;background: #fb9f20;padding-top: 8px;padding-bottom: 8px;max-width: 100px;position: absolute;z-index: 10;">
                     <a href="#"
@@ -12,14 +12,14 @@
                         Seller</a>
                 </div>
                 <img src="{{ $book->thumbnail }}" alt="Book Cover"
-                     class="rounded-xl" style="object-fit: cover;object-position:center; height: 100%;">
+                     class="thumbnail rounded-xl">
             </div>
 
-            <div class="col flex items-center">
-                <div class="book-info-panel">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 flex items-center">
+                <div style="padding-left: 15px;padding-right: 15px;padding-top: 15px;padding-bottom: 15px;">
                     <div style="margin-bottom: 18px;">
                         <h1 style="font-weight: 400;font-size: 20px;margin-bottom: 10px;">
-                            <a href="#">{{ $book->title }}</a>
+                            <a href="#">{{Str::limit($book->title, 20, ' ...')}}</a>
                         </h1>
 
                         <p style="font-family: 'ProximaNova', Arial, sans-serif;font-size: 12px;padding-bottom: 5px;padding-top: 5px;">

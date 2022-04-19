@@ -3,14 +3,14 @@
 </head>
 
 <x-layout>
-    <section id="wishlist-section" style="max-width: 1180px;margin: 0 auto;">
+    <section id="wishlist-section">
         <header>
             <nav class="flex">
                 <h1><i class="fa-solid fa-heart" style="color: #ff5053; margin-right: 15px"></i>My Wishlist</h1>
             </nav>
         </header>
 
-        <div class="container-fluid flex" style="padding: 0px;">
+        <div class="container" style="padding: 0px;">
             @if ($wishlists->count())
                 <x-wishlist-books-grid :wishlists="$wishlists"></x-wishlist-books-grid>
 
