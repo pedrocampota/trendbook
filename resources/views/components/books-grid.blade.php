@@ -1,5 +1,5 @@
 @props(['books'])
-
+@props(['categories'])
 <head>
     <link href="css/books-section.css" rel="stylesheet">
 </head>
@@ -11,12 +11,14 @@
             <h1><a href="#" style="margin-left: 90px; color: #adadad; font-weight: 400">New Releases</a></h1>
         </nav>
     </header>
+
     <div class="container" style="padding: 0px;">
         <div class="row gx-5 gy-4">
                 @if ($books->count() > 0)
                         @foreach ($books as $book)
                             <x-book-card
                                 :book="$book"
+                                :categories="$categories"
                                 class="{{ $loop->iteration < 3 }}"></x-book-card>
                         @endforeach
                 @endif

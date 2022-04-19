@@ -1,4 +1,5 @@
 @props(['book'])
+@props(['categories'])
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
     <article
@@ -22,9 +23,15 @@
                             <a href="#">{{Str::limit($book->title, 20, ' ...')}}</a>
                         </h1>
 
-                        <p style="font-family: 'ProximaNova', Arial, sans-serif;font-size: 12px;padding-bottom: 5px;padding-top: 5px;">
-                            <a href="#" style="color:#adadad;">{{ $book->slug }}</a>
-                        </p>
+                        <div style="padding-bottom: 5px;padding-top: 5px;">
+                            @forelse ($book->categories as $category)
+                                <button style="border-radius: 5px;border: 1px solid #d3d3d352;padding-top: 2px;padding-right: 5px;padding-left: 5px;padding-bottom: 2px;margin-right: 2px;margin-bottom: 3px">
+                                    <a href="/?category={{ $category->slug }}">{{ $category->name}}</a>
+                                </button>
+                            @empty
+                                <span>No category</span>
+                            @endforelse
+                        </div>
                     </div>
 
                     <div style="font-size:14px;margin-bottom: 25px;">

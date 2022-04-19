@@ -5,7 +5,7 @@
 
             <div class="block">
                 @if ($books->count())
-                    <x-books-grid :books="$books"></x-books-grid>
+                    <x-books-grid :books="$books" :categories="$categories"></x-books-grid>
 
                     {{ $books->links() }}
                 @else

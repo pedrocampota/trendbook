@@ -12,12 +12,12 @@ class Wishlist extends Model
 
     protected $table = "wishlist";
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function book(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function book()
     {
         return $this->belongsTo(Book::class);
     }

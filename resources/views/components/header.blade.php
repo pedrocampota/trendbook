@@ -18,7 +18,7 @@
             @endauth
 
             <div class="text-end mr-14 items-center flex">
-                <a href="/cart" class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
+                <a href="/" class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
                    <i class="fa-solid fa-cart-shopping" style="text-decoration: none;font-size: 18px;color: #2e3337;"></i>
                     <span class="cart-basket d-flex align-items-center justify-content-center" style="background: #ff5053;width: 18px;height: 18px;color: white;border-radius: 50px;align-content: center;position: absolute;left: 12px;top: -12px;padding-top: 5px;padding-bottom: 5px;">
                         2

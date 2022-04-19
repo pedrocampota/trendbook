@@ -17,8 +17,10 @@
                 {{ $wishlists->links() }}
             @else
                 <div style="margin: 0 auto;" class="flex items-center">
-                    <div style="text-align:center;margin: 0 auto; border-radius: 12px; border: 1px solid #cccccc; padding: 35px">
-                        <h1 style="margin-bottom: 10px"><i class="fa-solid fa-heart-crack" style="margin-right: 10px"></i>Oops!</h1>
+                    <div
+                        style="text-align:center;margin: 0 auto; border-radius: 12px; border: 1px solid #cccccc; padding: 35px">
+                        <h1 style="margin-bottom: 10px"><i class="fa-solid fa-heart-crack"
+                                                           style="margin-right: 10px"></i>Oops!</h1>
                         <p style="font-size: 16px">There are no books on your wishlist. Add some.</p>
                     </div>
                 </div>

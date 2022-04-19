@@ -10,7 +10,7 @@ class Book extends Model
     use HasFactory;
 
 
-    protected $with = ['category'];
+    /*protected $with = ['category'];
 
     public function scopeFilter($query, array $filters)
     {
@@ -19,15 +19,15 @@ class Book extends Model
         $query->where('slug', $category)
         )
         );
-    }
+    }*/
 
 
-    public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function categories()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsToMany(Category::class, 'category_book', 'book_id', 'category_id');
     }
 
-    public function wishlist(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function wishlist()
     {
         return $this->hasMany(Wishlist::class);
     }
