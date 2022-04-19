@@ -18,11 +18,11 @@
                 <div class="book-info-panel">
                     <div style="margin-bottom: 18px;">
                         <h1 style="font-weight: 400;font-size: 20px;margin-bottom: 10px;">
-                            <a href="#">{{$wishlist->book->title}}</a>
+                            <a href="#">{{ $wishlist->book->title }}</a>
                         </h1>
 
                         <p style="font-family: 'ProximaNova', Arial, sans-serif;font-size: 12px;padding-bottom: 5px;padding-top: 5px;">
-                            <a href="#" style="color:#adadad;">Business &amp; Money</a>
+                            <a href="#" style="color:#adadad;">{{ $wishlist->book->slug }}</a>
                         </p>
                     </div>
 
@@ -36,7 +36,7 @@
                             <i class="fa-solid fa-star" style="color: #FE9F1F"></i>
                         </div>
                         <p style="color:#9ecc74;">
-                            $22.00
+                            ${{ $wishlist->book->price }}
                         </p>
                     </div>
 

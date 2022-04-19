@@ -36,7 +36,7 @@
                             <i class="fa-solid fa-star" style="color: #FE9F1F"></i>
                         </div>
                         <p style="color:#9ecc74;">
-                            $22.00
+                            ${{ $book->price }}
                         </p>
                     </div>
 
