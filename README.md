@@ -2,7 +2,8 @@
 <img src="public/images/headergit.png" width="100%">
 <br>
 <br>
-<p href="" style="padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; border-radius:6px;color: white; background: #ff5053">Version: 1.0.0</p>
+<a href="" style="padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; border-radius:6px;color: white; background: #ff5053">Version: 1.0.0</a>
+</p>
 
 ## About
 
@@ -36,4 +37,4 @@ Step by step.
 
 #### Database
 
-[Here you can find Insert query statements for demo data.](storage/app/public/database_seed)
+[Here you can find Insert query statements for demo data.](../storage/app/public/database_seed)
