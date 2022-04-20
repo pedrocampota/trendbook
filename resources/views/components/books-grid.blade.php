@@ -12,6 +12,10 @@
         </nav>
     </header>
 
+    <div id="category-dropdown">
+        <x-category-dropdown  :categories="$categories"></x-category-dropdown>
+    </div>
+
     <div class="container" style="padding: 0px;">
         <div class="row gx-5 gy-4">
                 @if ($books->count() > 0)

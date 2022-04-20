@@ -19,6 +19,18 @@ section#books-section{
     color: #2e3337;
 }
 
+#category-dropdown{
+    border: 1px solid #e3e7ea;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+button.dropdown-button{
+    padding: 5px;
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 12px;
+}
 /* .col-book is a class for the column book item*/
 /*this is a custom padding for the right column inside the col-book*/
 .book-info-panel{
@@ -97,11 +109,19 @@ section#books-section{
     section#books-section{
         margin-left: 25px
     }
+
+    #category-dropdown{
+        display: none;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     section#books-section{
         margin-left: 50px
+    }
+
+    #category-dropdown{
+        display: none;
     }
 }
