@@ -6,7 +6,6 @@
 </p>
 
 ## About
-
 A book store made with Laravel 9.
 
 #### Main Framework
@@ -37,4 +36,4 @@ Step by step.
 
 #### Database
 
-[Here you can find Insert query statements for demo data.](../storage/app/public/database_seed.md)
+[Here you can find Insert query statements for demo data.](database_seed.md)
