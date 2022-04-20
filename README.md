@@ -1,5 +1,5 @@
-<p align="center" style="background: white; padding: 35px">
-<img src="public/images/trendesignbook-logo.png" width="250">
+<p align="center" >
+<img src="public/images/headergit.png" width="100%">
 <br>
 <br>
 <a href="" style="padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; border-radius:6px;color: white; background: #ff5053">Version: 1.0.0</a>
