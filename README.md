@@ -29,11 +29,7 @@ Use the credentials below to login as user:
 
 - Email: <span style="font-weight:600">admin@trendbook.com</span> 
 - Password: <span style="font-weight:600">password</span>
-
-## Installation
-
-Step by step.
-
-#### Database
-
+ 
+#### Database Seeding
+ 
 [Here you can find Insert query statements for demo data.](database_seed.md)
