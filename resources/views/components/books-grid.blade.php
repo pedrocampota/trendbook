@@ -13,19 +13,26 @@
     </header>
 
     <div id="category-dropdown">
-        <x-category-dropdown  :categories="$categories"></x-category-dropdown>
+        <x-category-dropdown :categories="$categories"></x-category-dropdown>
     </div>
 
     <div class="container" style="padding: 0px;">
         <div class="row gx-5 gy-4">
-                @if ($books->count() > 0)
-                        @foreach ($books as $book)
-                            <x-book-card
-                                :book="$book"
-                                :categories="$categories"
-                                class="{{ $loop->iteration < 3 }}"></x-book-card>
-                        @endforeach
-                @endif
+            @if ($books->count() > 1)
+                @foreach ($books as $book)
+                    <x-book-card
+                        :book="$book"
+                        :categories="$categories"
+                        class="{{ $loop->iteration < 3 }}"></x-book-card>
+                @endforeach
+            @else
+                @foreach ($books as $book)
+                    <x-one-book-card
+                        :book="$book"
+                        :categories="$categories"
+                        class="{{ $loop->iteration < 3 }}"></x-one-book-card>
+                @endforeach
+            @endif
         </div>
     </div>
 </section>
