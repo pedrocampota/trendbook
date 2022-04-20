@@ -10,15 +10,13 @@ class BookController extends Controller
 {
     public function index()
     {
-        $books = Book::orderby('id', 'desc')->paginate(8);
-        $categories = Category::all();
-        return view('books.index', compact('books', 'categories'));
+        //$books = Book::orderby('id', 'desc')->paginate(8);
+        //$categories = Category::all();
+        //return view('books.index', compact('books', 'categories'));
 
-        /*return view('books.index', [
-            'books' => Book::latest()->filter(
-                request(['category'])
-            )->paginate(18)->withQueryString()
-        ]);*/
+        return view('books.index', [
+            'categories' => Category::all(),
+            'books' => Book::latest()->filter(request(['categories']))->paginate(8)->withQueryString()]);
     }
 
     public function store(Request $request)

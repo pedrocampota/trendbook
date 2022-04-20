@@ -26,7 +26,7 @@
                         <div style="padding-bottom: 5px;padding-top: 5px;">
                             @forelse ($book->categories as $category)
                                 <button style="border-radius: 5px;border: 1px solid #d3d3d352;padding-top: 2px;padding-right: 5px;padding-left: 5px;padding-bottom: 2px;margin-right: 2px;margin-bottom: 3px">
-                                    <a href="/?category={{ $category->slug }}">{{ $category->name}}</a>
+                                    <a href="/?categories={{ $category->slug }}">{{ $category->name}}</a>
                                 </button>
                             @empty
                                 <span>No category</span>

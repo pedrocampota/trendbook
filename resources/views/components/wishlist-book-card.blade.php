@@ -17,7 +17,7 @@
             </div>
 
             <div class="col flex items-center">
-                <div class="book-info-panel">
+                <div>
                     <div style="margin-bottom: 18px;">
                         <h1 style="font-weight: 400;font-size: 20px;margin-bottom: 10px;">
                             <a href="#">{{ $wishlist->book->title }}</a>
