@@ -2,8 +2,7 @@
 <img src="public/images/headergit.png" width="100%">
 <br>
 <br>
-<a href="" style="padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; border-radius:6px;color: white; background: #ff5053">Version: 1.0.0</a>
-</p>
+<p href="" style="padding-left: 15px; padding-right: 15px; padding-top: 5px; padding-bottom: 5px; border-radius:6px;color: white; background: #ff5053">Version: 1.0.0</p>
 
 ## About
 
@@ -30,3 +29,11 @@ Use the credentials below to login as user:
 
 - Email: <span style="font-weight:600">admin@trendbook.com</span> 
 - Password: <span style="font-weight:600">password</span>
+
+## Installation
+
+Step by step.
+
+#### Database
+
+[Here you can find Insert query statements for demo data.](storage/app/public/database_seed)
