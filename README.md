@@ -37,4 +37,4 @@ Step by step.
 
 #### Database
 
-[Here you can find Insert query statements for demo data.](../storage/app/public/database_seed)
+[Here you can find Insert query statements for demo data.](../storage/app/public/database_seed.md)
