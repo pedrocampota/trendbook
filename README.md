@@ -9,17 +9,17 @@
 
 A book store made with Laravel 9.
 
-####Main Framework
+#### Main Framework
 - Laravel
 
-####Programing Language
+#### Programing Language
 - PHP
 
-####UI Frameworks
+#### UI Frameworks
 - Tailwind CSS
 - Bootstrap
 
-####Javascript Frameworks & Libraries
+#### Javascript Frameworks & Libraries
 - Alpine.js
 - jQuery
 - Moment.js
